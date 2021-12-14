@@ -13,6 +13,7 @@
 }
 
 main{
+    margin: auto;
     width: 300px;
     height: 350px;
     
@@ -29,12 +30,19 @@ main{
                     ;
     gap: 5px;
     padding: 5px;
+    border-radius: 5px;
+    
 }
 
 .player_x, .player_y{
     margin: 5px 5px 5px 40px;
     display: flex;
     color: var(--fontColor);
+    border-radius: 5px;
+}
+
+.player_x{
+    background-color: var(--mainBackgorudColor);
 }
 
 .player_x_button, .player_y_button{
@@ -45,6 +53,7 @@ main{
 .player_x_button{
     background-color: var(--playerAbutton);
     border: solid 1px var(--playerAbutton);
+    
 }
 .player_y_button{
     background-color: var(--playerBbutton);
@@ -58,18 +67,28 @@ main{
     border: solid 1px var(--buttonColor);
 
 }
+
+
+
 .button:hover{
-    background-color: var(--buttonhoverColor);
+  /*  background-color: var(--buttonhoverColor); */
     transition: 0.2s;
+    box-shadow: 3px 3px 5px var(--playerAbutton);
 }
+/* Hover for players: */
+
+.player_y_button_hover:hover{
+background-color: var(--playerBbutton);
+}
+
+
+
 
 .legend{
     font-size: 15px;
     grid-area: legend;
     
 }
-
-
 
 
 #a1{
