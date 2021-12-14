@@ -74,21 +74,6 @@ main{
 
 }
 
-
-
-.button:hover{
-  /*  background-color: var(--buttonhoverColor); */
-    transition: 0.2s;
-    box-shadow: 3px 3px 5px var(--playerAbutton);
-}
-/* Hover for players: */
-
-.player_y_button_hover:hover{
-background-color: var(--playerBbutton);
-}
-
-
-
 h4{
     padding: 4px;
 }
@@ -126,4 +111,15 @@ h4{
 }
 #c3{
     grid-area: c3;
+}
+
+@media (min-width:800px) {
+
+    .button:hover{
+        transition: 0.2s;
+        box-shadow: 3px 3px 5px var(--playerAbutton);
+    }
+    
+    
+    
 }
