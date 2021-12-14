@@ -3,7 +3,7 @@ const playerAboxShadow = "3px 3px 5px #be7f48";
 const playerBboxShadow = "3px 3px 5px #FA8072";
 const playerAbutton= "#F4A460";
 const playerBbutton= "#FA8072";
-const playerActiveBackgroundColor = "#f1e0d4";
+const playerActiveBackgroundColor = "#faebe1";
 
 var playerX=true;
 var playerY=false; 
