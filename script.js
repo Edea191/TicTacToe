@@ -89,6 +89,7 @@ function clicker(position){
     }
 
 
+
 }
 
 
@@ -160,14 +161,21 @@ function howIsWinner(a1, a2, a3, b1, b2, b3, c1, c2, c3){
         window.location.reload(true);
     }
     else if(a1== 2 && b2 == 2 && c3 ==2){
-        alert("Payer B Winner!");
+        alert("Player B Winner!");
         window.location.reload(true);
     } 
 
     else if(a3== 2 && b2 == 2 && c1 ==2){
-        alert("Payer B Winner!");
+        alert("Player B Winner!");
         window.location.reload(true);
     } 
+
+    else if(a1!= 0 && a2!=0 && a3!= 0 &&
+            b1!= 0 && b2!=0 && b3!= 0 &&
+            c1!= 0 && c2!=0 && c3!= 0){
+            alert("Try Again!");
+            window.location.reload(true);    
+            }
 
 
 
