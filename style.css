@@ -5,6 +5,7 @@
     --fontColor:#708090;
     --playerAbutton:#F4A460;
     --playerBbutton:#FA8072;
+    --playerActive:#f1e0d4;
 }
 *{
     box-sizing: border-box;
@@ -14,16 +15,17 @@
 
 main{
     margin: auto;
-    width: 400px;
-    height: 450px;
+    width: 80%;
+    height: 85%;
     
 }
 
 .game{
     background-color: var(--mainBackgorudColor);
-    width: 400px;
-    height: 400px;
+    width: 75%;
+    height: 75%;
     display: grid;
+    margin: auto;
     grid-template: "a1 a2 a3"
                     "b1 b2 b3"
                     "c1 c2 c3"
@@ -42,10 +44,11 @@ main{
 }
 
 .player_x{
-    background-color: var(--mainBackgorudColor);
+    background-color: var(--playerActive);
 }
 
 .player_x_button, .player_y_button{
+    padding: 10px;
     margin-right: 20px;
     width: 20px;
     border-radius: 5px;
