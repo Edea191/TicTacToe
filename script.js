@@ -110,8 +110,11 @@ function howIsWinner(a1, a2, a3, b1, b2, b3, c1, c2, c3){
         alert("Player A Winner!");
         window.location.reload(true);
     }
-
     else if(a2== 1 && b2 == 1 && c2== 1){
+        alert("Player A Winner!");
+        window.location.reload(true);
+    }
+    else if(b1== 1 && b2 == 1 && b3== 1){
         alert("Player A Winner!");
         window.location.reload(true);
     }
@@ -145,6 +148,11 @@ function howIsWinner(a1, a2, a3, b1, b2, b3, c1, c2, c3){
     }
 
     else if(a1== 2 && b1 == 2 && c1== 2){
+        alert("Player B Winner!");
+        window.location.reload(true);
+    }
+    
+    else if(b1== 1 && b2 == 1 && b3== 1){
         alert("Player B Winner!");
         window.location.reload(true);
     }
