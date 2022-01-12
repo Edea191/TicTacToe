@@ -27,10 +27,8 @@ main{
     height: 75%;
     display: grid;
     margin: auto;
-    grid-template: "a1 a2 a3"
-                    "b1 b2 b3"
-                    "c1 c2 c3"
-                    ;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 5px;
     padding: 5px;
     border-radius: 5px;
@@ -85,33 +83,6 @@ h4{
 }
 
 
-#a1{
-    grid-area: a1;
-}
-#a2{
-    grid-area: a2;
-}
-#a3{
-    grid-area: a3;
-}
-#b1{
-    grid-area: b1;
-}
-#b2{
-    grid-area: b2;
-}
-#b3{
-    grid-area: b3;
-}
-#c1{
-    grid-area: c1;
-}
-#c2{
-    grid-area: c2;
-}
-#c3{
-    grid-area: c3;
-}
 
 @media (min-width:800px) {
 
@@ -120,6 +91,12 @@ h4{
         box-shadow: 3px 3px 5px var(--playerAbutton);
     }
     
+    main{
+        display: flex;
+        flex-flow: row wrap;
+    }
     
-    
+    .legend{
+        align-self: center;
+    }
 }
